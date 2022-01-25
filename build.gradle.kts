@@ -12,6 +12,14 @@ plugins {
   signing
 }
 
+sourceSets {
+  test {
+    java {
+      srcDirs("src")
+    }
+  }
+}
+
 tasks.named<Test>("test") {
     useJUnitPlatform()
 }
