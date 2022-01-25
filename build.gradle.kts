@@ -20,6 +20,10 @@ sourceSets {
   }
 }
 
+tasks.named<Test>("test") {
+    useJUnitPlatform()
+}
+
 fun getProp(key: String, default: String): String {
   var r : String = default
   if (project.hasProperty(key)) {
