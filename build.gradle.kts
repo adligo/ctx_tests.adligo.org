@@ -13,7 +13,7 @@ plugins {
 }
 
 sourceSets {
-  main {
+  test {
     java {
       srcDirs("src")
     }
